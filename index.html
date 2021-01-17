@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shooter Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Turret+Road:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="nav">
+        <div id="logoName">
+            <div id = "logoWrapper">
+                <svg width="138" height="147" viewBox="0 0 138 147" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="logoSVG">
+                    <g id="ball">
+                    <circle id="Ball" cx="82.9306" cy="80" r="44" fill="#FF8855"/>
+                    </g>
+                    <g id="pointer">
+                    <path id="Polygon 2" d="M106.08 23.2842L76.8161 118.594L22.909 78.2641L106.08 23.2842Z" fill="black"/>
+                    <path id="Polygon 3" d="M95.4093 36.6046L62.2396 107.832L36.4433 88.5327L95.4093 36.6046Z" fill="white"/>
+                    <path id="Polygon 4" d="M77.7268 59.0415L56.9066 103.935L40.5373 91.6883L77.7268 59.0415Z" fill="#FF8855"/>
+                    </g>
+                    </g>
+                </svg>
+            </div>
+            <div id="name">vacc</div>
+        </div>
+        <div id = "navEnd">
+            <div id="topScoreLabel">Top Score</div>
+            <div id="topScore">0</div>
+            <div id="playButtonWrapper">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="playButton">
+                        <g id="playLogo">
+                            <circle id="playOrange" cx="25" cy="25" r="25" fill="#FFAE7A"/>
+                            <circle id="playWhite" cx="25" cy="25.2632" r="19.7368" fill="white"/>
+                            <path id="playTriangle" d="M43.3158 25.2632L12.3289 38.4814L12.3289 12.0449L43.3158 25.2632Z" fill="black"/>
+                        </g>
+                        <g id="pauseLogo">
+                            <g id="leftPause">
+                                <rect id="leftPauseOrange" x="10.5727" y="7.48898" width="8.81057" height="32.8194" fill="#FFA165"/>
+                                <rect id="leftPauseWhite" x="12.1145" y="9.25111" width="8.81057" height="32.8194" fill="white"/>
+                                <rect id="leftPauseBlack" x="14.978" y="11.2335" width="8.81057" height="32.8194" fill="black"/>
+                            </g>
+                            <g id="rightPause">
+                                <rect id="rightPauseOrange" x="27.0925" y="7.48898" width="8.81057" height="32.8194" fill="#FFA165"/>
+                                <rect id="rightPauseWhite" x="28.6344" y="9.25111" width="8.81057" height="32.8194" fill="white"/>
+                                <rect id="rightPauseBlack" x="31.4978" y="11.2335" width="8.81057" height="32.8194" fill="black"/>
+                            </g>
+                        </g>
+                    </g>
+                    </svg>
+                            
+                    
+            </div>
+        </div>
+    </div>
+    <div id="canvasWrapper">
+        <canvas id="canvas" width="1200" height="700"></canvas>
+        <div id ="endDiv">
+            <div id="endMessage">
+                Game Over
+            </div>
+            <div id="score"></div>
+            <div id="restart">RESTART</div>
+        </div>
+    </div>
+    <script src="init.js"></script>
+    <script src="methods.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
