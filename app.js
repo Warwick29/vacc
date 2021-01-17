@@ -17,7 +17,7 @@ class target{
         this.childCount = 0
         this.childMax = 1 + Math.round(Math.random()*3)
         this.r = 10 + Math.random()*20
-        this.reset = function(){ 
+        this.reset = function(){
             this.steerCount = 0
             this.steerConst = Math.round(Math.random()) === 0 ? 1 : -1
             this.steerWait = 200 + Math.round(Math.random()*300)
@@ -38,7 +38,7 @@ class target{
     }
     move(){
         this.x += this.speed * Math.cos(this.t)
-        this.y -= this.speed * Math.sin(this.t) 
+        this.y -= this.speed * Math.sin(this.t)
         this.manageBorder()
     }
     steer(){
@@ -113,13 +113,13 @@ class shooter{
         this.run = true
         this.destruct = false
         this.destructCount = 0;
-        this.count = 0 
+        this.count = 0
     }
     restart(){
         this.run = true
         this.destruct = false
         this.destructCount = 0;
-        this.count = 0 
+        this.count = 0
     }
     manageBorder(){
         if(this.x>canvas.width){this.x=0}
@@ -189,7 +189,7 @@ const refresh =()=>{
         }
         e.happen()
         e.draw()
-        
+
     })
     player.draw()
     player.forward()
@@ -256,7 +256,7 @@ const gameLoop =()=>{
         endDiv.style.opacity = 1
         const finalScore = Math.round(player.count/100)
         score.innerHTML = finalScore
-        if(finalScore>Number(topScore.innerHTML)){topScore.innerHTML = finalScore} 
+        if(finalScore>Number(topScore.innerHTML)){topScore.innerHTML = finalScore}
         return
     }
     setTimeout(gameLoop,10)

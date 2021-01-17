@@ -8,4 +8,4 @@ Vacc
 
 ### How do I use this thing? ###
 
-* space to shoot, up key to move forward, left and right keys to change direction
+* space to shoot, s to speed up, left and right keys to change direction
